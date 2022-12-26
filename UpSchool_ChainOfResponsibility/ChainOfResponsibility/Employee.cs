@@ -1,4 +1,6 @@
-﻿namespace UpSchool_ChainOfResponsibility.ChainOfResponsibility
+﻿using UpSchool_ChainOfResponsibility.DAL.Entities;
+
+namespace UpSchool_ChainOfResponsibility.ChainOfResponsibility
 {
     public abstract class Employee
     {
@@ -8,6 +10,6 @@
             this.NextApprover = supervisor;
         }
 
-        public abstract void ProcessRequest(WithdrawViewModel p);
+        public abstract void ProcessRequest(WithdrawViewModel req);
     }
 }
